@@ -40,7 +40,7 @@ a {
     box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
 }
 
-.seccion h2 {
+section h2 {
     color: #0BCC7B;
 }
 
@@ -60,4 +60,39 @@ nav ul {
     font-size: 1.4rem;
     margin-top: 6%;
     color: #373B41;
+}
+#seccioncontactenos{
+    display: grid;
+    grid-template-areas: "area1 area1 area1 area1"
+                         "area2 area2 area3 area3"
+                         "area4 area4 area5 area5";
+}
+#uno {
+    background-color: white;
+    grid-area: area1;
+}
+
+#seccioncontactenos div#dos {
+    background-color: white;
+    grid-area: area2;
+}
+
+#tres {
+    background-color: white;
+    grid-area: area3;
+}
+
+#cuatro {
+    background-color: white;
+    grid-area: area4;
+}
+
+#cinco {
+    background-color: white;
+    grid-area: area5;
+}
+
+.caja {   
+    font-size: 2rem;
+    text-align: left;
 }

@@ -54,6 +54,8 @@ section h2 {
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    justify-content: space-around;
 }
 
 #secciondatos p {
@@ -67,32 +69,26 @@ nav ul {
                          "area2 area2 area3 area3"
                          "area4 area4 area5 area5";
 }
-#uno {
-    background-color: white;
+#seccioncontactenos h2{
     grid-area: area1;
 }
 
-#seccioncontactenos div#dos {
-    background-color: white;
+#seccioncontactenos h3#dos {
     grid-area: area2;
 }
 
-#tres {
-    background-color: white;
+#seccioncontactenos h3#tres {
     grid-area: area3;
 }
 
-#cuatro {
-    background-color: white;
+#seccioncontactenos #cuatro {
     grid-area: area4;
 }
 
-#cinco {
-    background-color: white;
+#seccioncontactenos #cinco {
     grid-area: area5;
 }
 
-.caja {   
-    font-size: 2rem;
-    text-align: left;
+footer#datosFooter{
+    display: flex;
 }

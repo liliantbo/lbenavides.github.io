@@ -19,7 +19,6 @@
   <nav>
     <ul>
       <li><a href="#secciondatos">Datos Personales</a></li>
-
       <li><a href="#seccionredes">Redes Sociales</a></li>
       <li><a href="#seccionhabilidades">Habilidades</a></li>
       <li><a href="#secciongaleria">Galería</a></li>
@@ -103,58 +102,79 @@
   <section id="experienciaLaboral" class="seccion">
     <h1>Experiencia Laboral</h1>
     <h3>Technisys</h2>
-    <h5>Technical Business Analyst</h3>
+      <h5>Technical Business Analyst
+    </h3>
 
     <h3>Ecuaquimica</h2>
-    <h5>Asistente de Tecnologia</h3>
+      <h5>Asistente de Tecnologia
+    </h3>
   </section>
 
   <section id="seccioncontactenos" class="seccion">
-   
-    <div id="uno" class="caja">
+
     <h2>Contáctame</h2>
-  </div>
-  <div id="dos" class="caja">
-    <h3>Sus datos</h3>
-  </div>
-  <div id="cuatro" class="cuatro">
-    <form>
-      <label for="nombre">Nombres:</label><input type="text" name="nombre" id="nombre">
-      <label for="nombre">Apellidos:</label><input type="text" name="apellidos" id="apellidos"><br>
 
-      <label for="edad">Seleccione su rango de edad</label><br>
-      <input type="radio" id="opcion1" name="edad" value="menor25"><label for="opcion1"> menor a 25 años</label>
-      <input type="radio" id="opcion2" name="edad" value="entre26y20"><label for="si"> entre 26 y 30 años</label>
-      <input type="radio" id="opcion3" name="edad" value="mayor31"><label for="si"> mayor a 31 años</label><br><br>
+    <h3 id="dos">Sus datos</h3>
 
-      <label for="tiposervicio">Seleccione el tipo de servicio a consultar</label><br>
-      <input type="checkbox" name="frontend" id="frontend"><label for="frontend">Frontend Dev</label><br>
-      <input type="checkbox" name="backend" id="backend"><label for="backend">Backend
-        Dev</label><br>
-      <input type="checkbox" name="scrum" id="scrum"><label for="scrum">Desarrollo
-        de software</label><br>
-      <input type="checkbox" name="cicd" id="cicd"><label for="cicd">CI/CD</label><br>
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
-<div id="tres" class="caja">
-    <h3>Ubicación</h3>
-  </div>
-
-    <div id="cinco" class="caja">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.670001582503!2d-79.88967583572007!3d-2.2762972881481467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d656562308849%3A0xa1ca0c9ac1eab80a!2sMartha%20de%20Roldos%2C%20Guayaquil%20090111!5e0!3m2!1sen!2sec!4v1673707298260!5m2!1sen!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div id="cuatro">
+      <form>
+        <div id="nombresDiv">
+          <label for="nombre">Nombres:</label><input type="text" name="nombre" id="nombre">
+        </div>
+        <div id="apellidosDiv">
+          <label for="apellidos">Apellidos:</label><input type="text" name="apellidos" id="apellidos">
+        </div>
+        <div id="edadDiv">
+          <label for="edad">Seleccione su rango de edad</label>
+        </div>
+        <div id="edadRangosDiv">
+          <input type="radio" id="opcion1" name="edad" value="menor25"><label for="opcion1"> menor a 25 años</label>
+          <input type="radio" id="opcion2" name="edad" value="entre26y20"><label for="si"> entre 26 y 30 años</label>
+          <input type="radio" id="opcion3" name="edad" value="mayor31"><label for="si"> mayor a 31 años</label>
+        </div>
+        <div id="tipoServDiv">
+          <label for="tiposervicio">Seleccione el tipo de servicio a consultar</label>
+        </div>
+        <div id="tipoFDiv">
+          <input type="checkbox" name="frontend" id="frontend"><label for="frontend">Frontend Dev</label>
+        </div>
+        <div id="tipoBDiv">
+          <input type="checkbox" name="backend" id="backend"><label for="backend">Backend
+            Dev</label>
+        </div>
+        <div id="tipoSDiv">
+          <input type="checkbox" name="scrum" id="scrum"><label for="scrum">Desarrollo
+            de software</label>
+        </div>
+        <div id="tipoCIdiv">
+          <input type="checkbox" name="cicd" id="cicd"><label for="cicd">CI/CD</label>
+        </div>
+        <div id="tipoEnviardiv">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
     </div>
-  </div>
+
+    <h3 id="tres">Ubicación</h3>
+
+
+    <div id="cinco">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.670001582503!2d-79.88967583572007!3d-2.2762972881481467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d656562308849%3A0xa1ca0c9ac1eab80a!2sMartha%20de%20Roldos%2C%20Guayaquil%20090111!5e0!3m2!1sen!2sec!4v1673707298260!5m2!1sen!2sec"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
 
   </section>
 
-  <footer>
+  <footer id="datosFooter">
     <address>
-      Email: <a href="mailto:liliantbo@gmail.com">CORREO</a><br>
-      Tel: <a href="tel:+5930909090909">TELEFONO</a><br><br>
-      Santorini<br>
-      Guayaquil<br>
-      ECUADOR
+      <div id="emailDiv">Email: <a href="mailto:liliantbo@gmail.com">CORREO</a></div>
+      <div id="telDiv">Tel: <a href="tel:+5930909090909">TELEFONO</a></div>
+      <div id="santoriniDiv">Santorini</div>
+      <div id="gyeDiv">Guayaquil</div>
+      <div id="ecDiv">ECUADOR</div>
     </address>
   </footer>
 

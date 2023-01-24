@@ -1,0 +1,64 @@
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* El elemento header tendrá una imagen de fondo */
+
+header {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+}
+
+#seccionHeader {
+    display: grid;
+    grid-template-areas: "area1 area1"
+        "area2 area3";
+    padding-top: 100px;
+}
+
+#uno {
+    grid-area: area1;
+}
+
+#divHeaderIzquierda {
+    grid-area: area2;
+    padding-left: 20px;
+}
+#navTitulo{
+    font-size: xxx-large;
+}
+#h3Link{
+    font-weight: bold;
+}
+#h3Descripcion{
+    font-weight: 100;
+}
+
+#divHeaderDerecha {
+    grid-area: area3;
+    padding-left: 20px;
+}
+
+
+#ulLinks {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+#divImagenesWeb {
+    display: flex;
+}

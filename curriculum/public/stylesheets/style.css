@@ -92,3 +92,6 @@ nav ul {
 footer#datosFooter{
     display: flex;
 }
+#divServicios{
+    padding-top: 1rem;
+}

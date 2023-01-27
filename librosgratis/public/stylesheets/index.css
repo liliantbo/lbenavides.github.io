@@ -7,7 +7,9 @@
 /* El elemento body sin margen y sin relleno */
 
 body {
-    margin: 0;
+    margin-left: 4rem;
+    margin-right: 4rem;
+
     padding: 0;
 }
 
@@ -59,11 +61,38 @@ header {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
+    margin: 0;
 }
 
 #main{
-    padding:100px;
+    padding:1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 #divImagenesWeb {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#divImagenesWeb a img{
+    width: 9rem;
+    border: 1rem solid white;
+    box-shadow: 0 1px 6px rgb(0 0 0/12%),
+    0 1px 4px rgb(0 0 0/24%);
+
+}
+.borde{
+    border: 1mm ridge rgba(241, 11, 11, 0.6);
+}
+.bordeLateral{
+    border-left: 1mm ridge rgba(241, 11, 11, 0.6);    
+    border-right: 1mm ridge rgba(241, 11, 11, 0.6);
+    margin: 0%;
+}
+#links{
+    padding: 2rem;
+}
+#h2MainTitulo{
+    font-weight: normal;
+    font-size: x-large;
 }

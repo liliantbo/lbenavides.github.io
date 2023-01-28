@@ -10,32 +10,52 @@ body {
     margin: 0;
     padding: 0;
 }
-#main{
+
+#main {
+    padding: 2rem;
     display: grid;
-    grid-template-areas:"area1 area1 area1"
-                        "area2 area3 area4";
+    grid-template-areas: "area1 area1 area1"
+        "area2 area3 area4";
 }
-#mainLink{
+
+#mainLink {
     grid-area: area1;
+    font-weight: bold;
 }
-#mainIzquierdo{
+
+#mainIzquierdo {
     display: grid;
-    grid-template-areas:"area21 area21"
-                        "area22 area23";
+    grid-template-areas: "area21"
+        "area22";
+    padding-left: 1rem;
+    padding-right: 3rem;
 }
-#MainIzquierdoImagen{
-     grid-area: area23;
+
+#MainIzquierdoImagen {
+    grid-area: area22;
+    border: 1rem solid white;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
 }
-#mainDerecho{
+
+#mainDerecho {
     display: flex;
     list-style-type: none;
     flex-direction: column;
+
 }
-#mainDerechoIsbn{
+
+#mainDerechoIsbn {
     display: flex;
 }
-#divMainImagenesWeb{
+
+#divMainImagenesWeb {
     display: flex;
     list-style-type: none;
     flex-direction: column;
+    justify-content: space-around;
+}
+#divMainImagenesWeb img{
+    border: 1rem solid white;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+   
 }

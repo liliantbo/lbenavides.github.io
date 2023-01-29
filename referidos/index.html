@@ -11,6 +11,14 @@
 </head>
 
 <body>
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<symbol id="people-circle" viewBox="0 0 16 16">
+			<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+			<path fill-rule="evenodd"
+				d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+			</path>
+		</symbol>
+	</svg>
 	<!-- Encabezado -->
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
 		<div class="container-fluid">
@@ -57,45 +65,45 @@
 
 		<!-- INICIO SERVICIOS-->
 		<div class="row">
-			<div id="divTopServicios" class="col-sm-12">
+			<div class="col-sm-12">
 
-				<div id="divTituloTop" class="mx-auto" style="width: 11em;">
+				<div class="mx-auto" style="width: 11em;">
 					<h3 class="mt-2 mb-3">Top Servicios</h3>
 				</div>
-			
-				<div id="divListaTopServicios" class="row">
 
-					<div class="col-4 topServicios shadow-sm btn btn-outline-warning" onclick="location.href='#';"
+				<div class="row justify-content-center">
+
+					<div class="col-3 topServicios shadow-sm btn btn-outline-warning m-1" onclick="location.href='#';"
 						style="background-image: url('public/images/electricista.png');">
 						<div class="mx-auto pt-1 topServiciosArriba">
 							<h5>Electricista</h5>
 						</div>
 						<div class="topServiciosAbajo">
 							<svg class="p-2 mx-auto" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-								<image href="public/images/electricista.png" class="topServiciosAbajoImagen" />
+								<image href="public/images/electricista.png" class="topServiciosAbajoImagen"></image>
 							</svg>
 						</div>
 					</div>
 
-					<div class="col-4 topServicios shadow-sm btn btn-outline-warning" onclick="location.href='#';"
+					<div class="col-3 topServicios shadow-sm btn btn-outline-warning m-1" onclick="location.href='#';"
 						style="background-image: url('public/images/albanil.png');">
 						<div class="mx-auto pt-1 topServiciosArriba">
 							<h5>Albañil</h5>
 						</div>
 						<div class="topServiciosAbajo">
 							<svg class="p-2 mx-auto" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-								<image href="public/images/albanil.png" class="topServiciosAbajoImagen" />
+								<image href="public/images/albanil.png" class="topServiciosAbajoImagen"></image>
 							</svg>
 						</div>
 					</div>
-					<div class="col-4 topServicios shadow-sm btn btn-outline-warning" onclick="location.href='#';"
+					<div class="col-3 topServicios shadow-sm btn btn-outline-warning m-1" onclick="location.href='#';"
 						style="background-image: url('public/images/plomero.png');">
 						<div class="mx-auto pt-1 topServiciosArriba">
 							<h5>Plomero</h5>
 						</div>
 						<div class="topServiciosAbajo">
 							<svg class="p-2 mx-auto" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-								<image href="public/images/plomero.png" class="topServiciosAbajoImagen" />
+								<image href="public/images/plomero.png" class="topServiciosAbajoImagen"></image>
 							</svg>
 						</div>
 					</div>
@@ -109,20 +117,19 @@
 		<!-- FIN SERVICIOS-->
 
 		<!-- INICIO CATEGORIAS-->
-
 		<div class="row">
 
-			<div id="divTituloCategorias" class="mx-auto" style="width: 11em;">
+			<div class="mx-auto" style="width: 11em;">
 				<h3 class="mt-4 mb-3">Categorias</h3>
 			</div>
 			<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-				
+
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<!--FILA1-->
 						<div class="listaCategorias d-flex justify-content-center flex-wrap align-content-center mx-5">
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';"
 								style="background-image: url('public/images/albanil.png');">
 								<div class="mx-auto topCategoriaArriba">
@@ -135,7 +142,7 @@
 								</div>
 							</div>
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';"
 								style="background-image: url('public/images/carpintero2.png');">
 								<div class="mx-auto topCategoriaArriba">
@@ -148,7 +155,7 @@
 								</div>
 							</div>
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';"
 								style="background-image: url('public/images/cerrajero.png');">
 								<div class="mx-auto topCategoriaArriba">
@@ -162,9 +169,10 @@
 							</div>
 						</div>
 						<!--FILA 2-->
-						<div class="listaCategorias d-none d-lg-block d-lg-flex justify-content-center flex-wrap align-content-center mx-5">
+						<div
+							class="listaCategorias d-none d-lg-block d-lg-flex justify-content-center flex-wrap align-content-center mx-5">
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';"
 								style="background-image: url('public/images/electricista.png');">
 								<div class="mx-auto topCategoriaArriba">
@@ -177,7 +185,7 @@
 								</div>
 							</div>
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';"
 								style="background-image: url('public/images/EntrenadorPerros.png');">
 								<div class="mx-auto topCategoriaArriba">
@@ -191,7 +199,7 @@
 								</div>
 							</div>
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';"
 								style="background-image: url('public/images/jardinero.png');">
 								<div class="mx-auto topCategoriaArriba">
@@ -209,7 +217,7 @@
 						<!--FILA1-->
 						<div class="listaCategorias d-flex justify-content-center flex-wrap align-content-center mx-5">
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';" style="background-image: url('public/images/pintor.png');">
 								<div class="mx-auto topCategoriaArriba">
 									<h5>Pintor</h5>
@@ -221,7 +229,7 @@
 								</div>
 							</div>
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';"
 								style="background-image: url('public/images/plomero.png');">
 								<div class="mx-auto topCategoriaArriba">
@@ -234,7 +242,7 @@
 								</div>
 							</div>
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';" style="background-image: url('public/images/');">
 								<div class="mx-auto topCategoriaArriba">
 									<h5>Cerrajero</h5>
@@ -247,9 +255,10 @@
 							</div>
 						</div>
 						<!--FILA 2-->
-						<div class="listaCategorias d-none d-lg-block d-lg-flex justify-content-center flex-wrap align-content-center mx-5">
+						<div
+							class="listaCategorias d-none d-lg-block d-lg-flex justify-content-center flex-wrap align-content-center mx-5">
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';"
 								style="background-image: url('public/images/electricista.png');">
 								<div class="mx-auto topCategoriaArriba">
@@ -262,7 +271,7 @@
 								</div>
 							</div>
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';"
 								style="background-image: url('public/images/jardinero.png');">
 								<div class="mx-auto topCategoriaArriba">
@@ -275,7 +284,7 @@
 								</div>
 							</div>
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';"
 								style="background-image: url('public/images/EntrenadorPerros.png');">
 								<div class="mx-auto topCategoriaArriba">
@@ -288,14 +297,14 @@
 									</svg>
 								</div>
 							</div>
-							
+
 						</div>
 					</div>
 					<div class="carousel-item">
 						<!--FILA1-->
 						<div class="listaCategorias d-flex justify-content-center flex-wrap align-content-center mx-5">
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';" style="background-image: url('public/images/pintor.png');">
 								<div class="mx-auto topCategoriaArriba">
 									<h5>Pintor</h5>
@@ -307,7 +316,7 @@
 								</div>
 							</div>
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';"
 								style="background-image: url('public/images/plomero.png');">
 								<div class="mx-auto topCategoriaArriba">
@@ -320,7 +329,7 @@
 								</div>
 							</div>
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';" style="background-image: url('public/images/');">
 								<div class="mx-auto topCategoriaArriba">
 									<h5>Cerrajero</h5>
@@ -333,11 +342,12 @@
 							</div>
 						</div>
 						<!--FILA 2-->
-						<div class="listaCategorias d-none d-lg-block d-lg-flex justify-content-center flex-wrap align-content-center mx-5">
+						<div
+							class="listaCategorias d-none d-lg-block d-lg-flex justify-content-center flex-wrap align-content-center mx-5">
 
-							
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';"
 								style="background-image: url('public/images/EntrenadorPerros.png');">
 								<div class="mx-auto topCategoriaArriba">
@@ -351,7 +361,7 @@
 								</div>
 							</div>
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';"
 								style="background-image: url('public/images/jardinero.png');">
 								<div class="mx-auto topCategoriaArriba">
@@ -364,7 +374,7 @@
 								</div>
 							</div>
 
-							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning"
+							<div class="col-sm-9 col-md-3 topCategorias shadow-sm btn btn-outline-warning m-1"
 								onclick="location.href='#';"
 								style="background-image: url('public/images/electricista.png');">
 								<div class="mx-auto topCategoriaArriba">
@@ -399,16 +409,258 @@
 
 
 		</div>
-
 		<!--FIN CATEGORIAS-->
-		<div class="row">
-			<div class="col-sm-12">3</div>
-			<div class="col-sm-12">4</div>
+
+		<!-- INICIO HABILIDADES Y REFERIDOS-->
+		<div class="row d-flex flex-column justify-content-center align-content-center">
+
+			<div class="row">
+
+				<!--LISTA HABILIDADES-->
+				<div class="col-sm-12 col-md-6">
+					<div class="mx-auto" style="width: 11em;">
+						<h4 class="mt-4 mb-3">Top Habilidades</h4>
+					</div>
+
+					<div class="d-flex flex-wrap justify-content-center scrollspyHabilidadesReferidos"
+						data-bs-spy="scroll" data-bs-smooth-scroll="true" tabindex="0">
+
+						<div class="col-sm-12 col-md-5 btn btn-outline-warning topHabilidades m-1"
+							onclick="location.href='#';">
+							<svg class="mx-auto rounded-circle" xmlns="http://www.w3.org/2000/svg" role="img" width="60"
+								height="60">
+								<rect width="100%" height="100%" fill="#777" class="opacity-25">
+								</rect>
+								<image href="public/images/destornillador.png" class="topHabilidadesImagen" x="5%"
+									y="20%"></image>
+							</svg>
+							<h6>Linea Blanca</h6>
+							<p> <small>Reparación y mantenimiento de cocina, refrigerador, aire acondicionado</small>
+							</p>
+						</div>
+
+						<div class="col-sm-12 col-md-5 btn btn-outline-warning topHabilidades m-1 d-none d-lg-block"
+							onclick="location.href='#';">
+							<svg class="mx-auto rounded-circle" xmlns="http://www.w3.org/2000/svg" role="img" width="60"
+								height="60">
+								<rect width="100%" height="100%" fill="#777" class="opacity-25">
+								</rect>
+								<image href="public/images/destornillador.png" class="topHabilidadesImagen" x="5%"
+									y="20%"></image>
+							</svg>
+							<h6>Puntos electricos</h6>
+							<p> <small>110V  y 220V, instalación de nuevo punto en caja de breake</small>
+							</p>
+						</div>
+
+						<div class="col-sm-12 col-md-5 btn btn-outline-warning topHabilidades m-1"
+							onclick="location.href='#';">
+							<svg class="mx-auto rounded-circle" xmlns="http://www.w3.org/2000/svg" role="img" width="60"
+								height="60">
+								<rect width="100%" height="100%" fill="#777" class="opacity-25">
+								</rect>
+								<image href="public/images/destornillador.png" class="topHabilidadesImagen" x="5%"
+									y="20%"></image>
+							</svg>
+							<h6>Construccion</h6>
+							<p> <small>Paredes, pisos, techo, boquetes para puerta, ventanas y aire acondicionado</small>
+							</p>
+						</div>
+
+						<div class="col-sm-12 col-md-5 btn btn-outline-warning topHabilidades m-1 d-none d-lg-block"
+							onclick="location.href='#';">
+							<svg class="mx-auto rounded-circle" xmlns="http://www.w3.org/2000/svg" role="img" width="60"
+								height="60">
+								<rect width="100%" height="100%" fill="#777" class="opacity-25">
+								</rect>
+								<image href="public/images/destornillador.png" class="topHabilidadesImagen" x="5%"
+									y="20%"></image>
+							</svg>
+							<h6>Trampa de agua</h6>
+							<p> <small>Instalacion y mantenimiento de trampas de agua para restaurantes y casas</small>
+							</p>
+						</div>
+
+						<div class="col-sm-12 col-md-5 btn btn-outline-warning topHabilidades m-1 d-none d-lg-block"
+							onclick="location.href='#';">
+							<svg class="mx-auto rounded-circle" xmlns="http://www.w3.org/2000/svg" role="img" width="60"
+								height="60">
+								<rect width="100%" height="100%" fill="#777" class="opacity-25">
+								</rect>
+								<image href="public/images/destornillador.png" class="topHabilidadesImagen" x="5%"
+									y="20%"></image>
+							</svg>
+							<h6>Breaker</h6>
+							<p> <small>Instalacion de nueva caja de breaker</small>
+							</p>
+						</div>
+
+						<div class="col-sm-12 col-md-5 btn btn-outline-warning topHabilidades m-1 d-none d-lg-block"
+							onclick="location.href='#';">
+							<svg class="mx-auto rounded-circle" xmlns="http://www.w3.org/2000/svg" role="img" width="60"
+								height="60">
+								<rect width="100%" height="100%" fill="#777" class="opacity-25">
+								</rect>
+								<image href="public/images/destornillador.png" class="topHabilidadesImagen" x="5%"
+									y="20%"></image>
+							</svg>
+							<h6>Iluminacion</h6>
+							<p> <small>Instalación de nuevos puntos de luminarias</small>
+							</p>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- FIN LISTA HABILIDADES-->
+
+				<!--LISTA REFERIDOS-->
+				<div class="col-sm-12 col-md-6">
+
+					<div class="mx-auto" style="width: 12em;">
+						<h4 class="mt-4 mb-3">Nuevos Referidos</h4>
+					</div>
+
+					<div data-bs-spy="scroll" data-bs-smooth-scroll="true" class="scrollspyHabilidadesReferidos  d-lg-flex flex-wrap"
+						tabindex="0">
+
+						<div class="col-sm-12 col-md-5 btn btn-outline-warning topHabilidades m-1"
+							onclick="location.href='#';">
+
+							<div
+								class="col d-flex align-items-start justify-content-startflex-wrap align-content-center">
+								<div class="icon-square">
+									<svg class="bi" width="3em" height="2em">
+										<use xlink:href="#people-circle"></use>
+									</svg>
+								</div>
+								<div class="d-flex flex-column justiy-content-center mx-auto">
+									<h5 class="fs-6 m-0">Maestro Eduardo</h5>
+									<h5 class="fs-6 m-0">Albañil</h5>
+									
+								</div>
+							</div>
+							<p class="pt-1">Eduardo Millan</p>
+							<p class="display-7 fst-italic">"Me ayudó instalando un nuevo punto de corriente en la pared
+								donde hago home office."</p>
+
+						</div>
+
+						<div class="col-sm-12 col-md-5 btn btn-outline-warning topHabilidades m-1"
+							onclick="location.href='#';">
+
+							<div
+								class="col d-flex align-items-start justify-content-startflex-wrap align-content-center">
+								<div class="icon-square">
+									<svg class="bi" width="3em" height="2em">
+										<use xlink:href="#people-circle"></use>
+									</svg>
+								</div>
+								<div class="d-flex flex-column justiy-content-center mx-auto">
+									<h5 class="fs-6 m-0">Don Maykel</h5>
+									<h5 class="fs-6 m-0">Electricista</h5>
+									
+								</div>
+							</div>
+							<p class="pt-1">Maykel Merchan</p>
+							<p class="display-7 fst-italic">"Me ayuda con el mantenimiento de mis aires acondicionados. Muy profesional y excelente precio"</p>
+
+						</div>
+
+						<div class="col-sm-12 col-md-5 btn btn-outline-warning topHabilidades m-1 d-none d-lg-block"
+							onclick="location.href='#';">
+
+							<div
+								class="col d-flex align-items-start justify-content-startflex-wrap align-content-center">
+								<div class="icon-square">
+									<svg class="bi" width="3em" height="2em">
+										<use xlink:href="#people-circle"></use>
+									</svg>
+								</div>
+								<div class="d-flex flex-column justiy-content-center mx-auto">
+									<h5 class="fs-6 m-0">Jorgito</h5>
+									<h5 class="fs-6 m-0">Entrenador de perros</h5>
+									
+								</div>
+							</div>
+							<p class="pt-1">Jorge Montalvan</p>
+							<p class="display-7 fst-italic">"Mi perrita tenia nuy mal temperamento, pero con la ayuda de Jorgito
+								 ahora puedo sacarla a pasear sin que tema que muerda a alguienb"</p>
+
+						</div>
+
+						<div class="col-sm-12 col-md-5 btn btn-outline-warning topHabilidades m-1 d-none d-lg-block"
+							onclick="location.href='#';">
+
+							<div
+								class="col d-flex align-items-start justify-content-startflex-wrap align-content-center">
+								<div class="icon-square">
+									<svg class="bi" width="3em" height="2em">
+										<use xlink:href="#people-circle"></use>
+									</svg>
+								</div>
+								<div class="d-flex flex-column justiy-content-center mx-auto">
+									<h5 class="fs-6 m-0">Don Humberto</h5>
+									<h5 class="fs-6 m-0">Cerrajero</h5>
+									
+								</div>
+							</div>
+							<p class="pt-1">Humberto Zambrano</p>
+							<p class="display-7 fst-italic">"Me ayudó cambiando la chapa defectuosa de una de las habitaciones, muy rapido y ordenado."</p>
+
+						</div>
+
+						<div class="col-sm-12 col-md-5 btn btn-outline-warning topHabilidades m-1 d-none d-lg-block"
+							onclick="location.href='#';">
+
+							<div
+								class="col d-flex align-items-start justify-content-startflex-wrap align-content-center">
+								<div class="icon-square">
+									<svg class="bi" width="3em" height="2em">
+										<use xlink:href="#people-circle"></use>
+									</svg>
+								</div>
+								<div class="d-flex flex-column justiy-content-center mx-auto">
+									<h5 class="fs-6 m-0">Kike Suarez</h5>
+									<h5 class="fs-6 m-0">Plomero</h5>
+									
+								</div>
+							</div>
+							<p class="pt-1">Enrique Suarez</p>
+							<p class="display-7 fst-italic">"La ducha filtraba agua y levantaba la pintura de la pared del piso de abajo, detecto el problema y lo corrigio muy bien."</p>
+
+						</div>
+
+					</div>
+				</div>
+
+				<!-- FIN LISTA REFERIDOS-->
+
+			</div>
+
 		</div>
+		<!-- FIN HABILIDADES Y REFEREIDOS-->
+
 		<div class="row">
 
-			<div class="col-sm-12">5</div>
+			<div class="col-3 descargarApp d-flex flex-column justify-content-center mt-4" style="width: 100%;">
+				<div class="mx-auto pt-3 descargarAppArriba">
+					<h5>Disponible en IOS y Android</h5>
+				</div>
+				<div class="descargarAppAbajo">
+					<svg class="mx-auto" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+						<image href="public/images/app.png" class="descargarAppAbajoImagen"></image>
+					</svg>					
+				</div>
+				<div class="redes">
+					<svg class="mx-auto" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+						<image href="public/images/redes.png" class="descargarAppAbajoImagen2"></image>
+					</svg>
+				</div>
+				
+			</div>
 		</div>
+
 	</main>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

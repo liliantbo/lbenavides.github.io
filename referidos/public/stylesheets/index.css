@@ -1,0 +1,21 @@
+.topServicios{
+    height: 50vh!important;    
+    background-repeat: repeat-y!important;
+    background-blend-mode: lighten!important;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer!important;
+    --bs-btn-color: #636464;
+	--bs-btn-hover-color: #ffc107;
+    --bs-btn-hover-bg: rgb(227 242 253 / 90%);
+}
+.topServiciosArriba{
+    width: 7em!important; 
+    height: 20vh!important;
+}
+.topServiciosAbajo{
+    height: 30vh!important
+}
+.topServiciosAbajoImagen{
+    height:70%!important;
+    width:100%!important
+}

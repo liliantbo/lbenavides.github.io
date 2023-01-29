@@ -1,3 +1,6 @@
+.divListaTopServicios{
+    justify-content: space-around;
+}
 .topServicios{
     height: 50vh!important;    
     background-repeat: repeat-y!important;
@@ -8,14 +11,13 @@
 	--bs-btn-hover-color: #ffc107;
     --bs-btn-hover-bg: rgb(227 242 253 / 90%);
 }
-.topServiciosArriba{
-    width: 7em!important; 
+.topServiciosArriba{   
     height: 20vh!important;
 }
 .topServiciosAbajo{
     height: 30vh!important
 }
 .topServiciosAbajoImagen{
-    height:70%!important;
+    height:100%!important;
     width:100%!important
 }

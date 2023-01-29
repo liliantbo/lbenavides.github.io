@@ -2,7 +2,7 @@
     justify-content: space-around;
 }
 .topServicios{
-    height: 50vh!important;    
+    height: 20vh!important;    
     background-repeat: repeat-y!important;
     background-blend-mode: lighten!important;
     background-color: rgba(255, 255, 255, 0.9);
@@ -12,12 +12,44 @@
     --bs-btn-hover-bg: rgb(227 242 253 / 90%);
 }
 .topServiciosArriba{   
-    height: 20vh!important;
+    height: 5vh!important;
 }
 .topServiciosAbajo{
-    height: 30vh!important
+    height: 15vh!important
 }
 .topServiciosAbajoImagen{
     height:100%!important;
     width:100%!important
+}
+.topCategorias{
+    height: 15vh!important;    
+    background-repeat: repeat-y!important;
+    background-blend-mode: lighten!important;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer!important;
+    --bs-btn-color: #636464;
+	--bs-btn-hover-color: #ffc107;
+    --bs-btn-hover-bg: rgb(227 242 253 / 90%);
+}
+.topCategoriaArriba{   
+    height: 5vh!important;
+}
+.topCategoriasAbajo{
+    height: 10vh!important
+}
+.topCategoriaAbajoImagen{
+    height:70%!important;
+    width:100%!important
+}
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+.carousel-indicators [data-bs-target] {background-color: rgb(7, 4, 4);}
+
+.listaCategorias{   
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: center;
 }

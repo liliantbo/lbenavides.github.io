@@ -47,9 +47,3 @@
 }
 .carousel-indicators [data-bs-target] {background-color: rgb(7, 4, 4);}
 
-.listaCategorias{   
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    align-content: center;
-}

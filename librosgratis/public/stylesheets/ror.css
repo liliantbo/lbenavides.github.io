@@ -9,6 +9,7 @@
 body {
     margin: 0;
     padding: 0;
+    padding: inline 3vh;
 }
 
 #main {
@@ -41,11 +42,29 @@ body {
     display: flex;
     list-style-type: none;
     flex-direction: column;
+    padding-left: 8vmax;
+    padding-right: 10vmax;
+    border-right: red;
+    border-right-style: groove;
 
+}
+#mainDerechoTitulo{
+    padding-top: 6vmax;
 }
 
 #mainDerechoIsbn {
     display: flex;
+}
+#isbnNumber{
+    font-size: 1.5vmax;
+    font-weight: 100;
+    padding-left: .5em;
+}
+
+#mainDerechoAutor{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
 }
 
 #divMainImagenesWeb {
